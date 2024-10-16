@@ -78,6 +78,7 @@ header {
 .banner .sliders {
   width: 1000vw; /*Largura da Tela*/
   height: 100%; /*altura disponivel da tela*/
+  margin-left: -0vw;
 }
 
 /*Caixa de Sliders*/
@@ -114,9 +115,36 @@ header {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 600px;
+  font-weight: bold;
   font-size: 12px;
   padding: 10px 30px;
   margin-top: 30px;
   border-radius: 20px;
+}
+.banner h1 span{
+  display: flex;
+  justify-content: center;
+}
+
+.banner .sliders-pointers{
+  width: 100vw;
+  height: 20px;
+  position: absolute;/*Position absolute faz com que meu bannner não esconda meus SLIDERS*/
+  margin-top: -50px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .pointer{
+  width: 15px;
+  height: 15px;
+  border: 2px solid #b28756;
+  border-radius: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.banner .pointer.active{
+  background-color: #b28756;
 }
