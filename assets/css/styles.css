@@ -6,6 +6,7 @@
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 15px;
+  overflow-x: hidden;
 }
 
 header {
@@ -121,22 +122,22 @@ header {
   margin-top: 30px;
   border-radius: 20px;
 }
-.banner h1 span{
+.banner h1 span {
   display: flex;
   justify-content: center;
 }
 
-.banner .sliders-pointers{
+.banner .sliders-pointers {
   width: 100vw;
   height: 20px;
-  position: absolute;/*Position absolute faz com que meu bannner não esconda meus SLIDERS*/
-  margin-top: -50px; 
+  position: absolute; /*Position absolute faz com que meu bannner não esconda meus SLIDERS*/
+  margin-top: -50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.banner .pointer{
+.banner .pointer {
   width: 15px;
   height: 15px;
   border: 2px solid #b28756;
@@ -145,6 +146,49 @@ header {
   margin-right: 5px;
   cursor: pointer;
 }
-.banner .pointer.active{
+.banner .pointer.active {
   background-color: #b28756;
 }
+.default {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.default .section-title,
+.default .section-desc {
+  text-align: center;
+  text-transform: uppercase;
+}
+.default .section-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+.default .section-desc {
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.default .section-body {
+  max-width: 1140px;
+  margin: auto;
+}
+.default.light {
+  background-color: #f7f7f7;
+}
+.default.default.light .section-title,
+.default.default.light .section-body {
+  color: black;
+}
+.default.dark {
+  background-color: black;
+}
+.default.dark .section-title,
+.default.dark .section-body{
+  color: white;
+}
+/*Separação do CSS por Área na parte de cima é da interface como todo*/
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Nessa parte de baixo é CSS para Áreas espcífica da interface para manuteção mas simples*/
