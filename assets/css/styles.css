@@ -66,7 +66,19 @@ header {
   border-bottom: 5px solid #b28756;
   color: #ccc;
 }
-
+.button {
+  display: inline-block; /*Configuração para todos Buttom*/
+  padding: 20px;
+  background-color: #b28756;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
 /*Banner Princioal*/
 .banner {
   height: calc(100vh - 100px);
@@ -109,19 +121,7 @@ header {
   text-transform: uppercase;
   margin-top: 20px;
 }
-.banner a {
-  display: block; /*Displey bloque pouis terei de configura padin*/
-  padding: 20px;
-  background-color: #b28756;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 12px;
-  padding: 10px 30px;
-  margin-top: 30px;
-  border-radius: 20px;
-}
+
 .banner h1 span {
   display: flex;
   justify-content: center;
@@ -149,6 +149,8 @@ header {
 .banner .pointer.active {
   background-color: #b28756;
 }
+
+/*Separação do CSS por Área na parte de cima é da interface como todo*/
 .default {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -187,8 +189,32 @@ header {
 .default.dark .section-body{
   color: white;
 }
+
+
+
 /*Separação do CSS por Área na parte de cima é da interface como todo*/
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*Nessa parte de baixo é CSS para Áreas espcífica da interface para manuteção mas simples*/
+
+.section-aboutus{
+  display: flex;
+}
+.section-aboutus--left{
+  flex: 1;
+}
+
+.section-aboutus--left p {
+font-size: 14px;
+line-height: 21px;
+}
+
+.section-aboutus--right{
+  width: 580px;
+  text-align: center;
+}
+.section-aboutus--right img{
+  width: 480px;
+  box-shadow: 2px 6px 12px #333;
+}
