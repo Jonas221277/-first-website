@@ -186,11 +186,9 @@ header {
   background-color: black;
 }
 .default.dark .section-title,
-.default.dark .section-body{
+.default.dark .section-body {
   color: white;
 }
-
-
 
 /*Separação do CSS por Área na parte de cima é da interface como todo*/
 
@@ -198,23 +196,89 @@ header {
 
 /*Nessa parte de baixo é CSS para Áreas espcífica da interface para manuteção mas simples*/
 
-.section-aboutus{
+.section-aboutus {
   display: flex;
 }
-.section-aboutus--left{
+.section-aboutus--left {
   flex: 1;
 }
 
 .section-aboutus--left p {
-font-size: 14px;
-line-height: 21px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
-.section-aboutus--right{
+.section-aboutus--right {
   width: 580px;
   text-align: center;
 }
-.section-aboutus--right img{
+.section-aboutus--right img {
   width: 480px;
   box-shadow: 2px 6px 12px #333;
+}
+/*.........................................*/
+.section-services {
+  display: flex;
+}
+.section-service img {
+  width: 60px;
+  height: 60px;
+}
+.section-service {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #333;
+  padding: 15px;
+}
+.section-service:first-child {
+  border-left: 1px solid #333;
+}
+
+.section-service h4 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.section-service p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+}
+
+/*............................................*/
+
+.section-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-projects--filters {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.section-projects--filters ul,
+li {
+  list-style: none;
+}
+.section-projects--filters li {
+  display: inline-block;
+  padding: 17px;
+  text-transform: uppercase;
+  font-size: 13px;
+  border-left: 1px solid #ccc;
+  color: #555;
+  border: bottom 4px solid #eee;
+  cursor: pointer;
+}
+.section-projects--filters li:hover,
+.section-projects--filters li.active {
+  border-bottom: 3px solid #b28756;
+}
+.section-projects--filters li:first-child {
+  border-left: 0px;
 }
