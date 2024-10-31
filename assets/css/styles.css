@@ -419,3 +419,43 @@ li {
 .section-team--social a:hover{
 background-color: #b28756;
 }
+
+
+.heppy{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 35px;
+}
+.heppy-client--jonh{
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  
+}
+.heppy-client--jonh h3{
+  font-size: 25px;
+  font-weight: bolder;
+
+}
+.heppy-client--jonh p{
+  font-size: 13px;
+  text-align: center;
+  color: #999;
+  margin-top: 10px;
+
+}
+.heppy-client--avatar{
+ margin-top: 30px;
+ margin-bottom: 20px;
+}
+.heppy-client--name{
+font-size: 25px;
+font-weight: bolder;
+}
+.heppy-client--description{
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
